@@ -1,6 +1,6 @@
 %define	name	bg5ps
 %define	version	1.3.0
-%define	release	9mdk
+%define	release	%mkrel 10
 
 Name:		%{name}
 Version:	%{version}
@@ -8,7 +8,6 @@ Release:	%{release}
 Summary:	A program for converting PostScript files to Chinese PostScript files.
 Source0:	ftp://ftp.debian.org/debian/dists/unstable/main/source/text/%{name}_%{version}.orig.tar.bz2
 Patch0:		bg5ps-geoff.patch
-Patch1:		bg5ps-Makefile.patch
 Source1:	gb2312-bg5ps.conf
 Source2:	gbps
 # note: should we apply debian's patch? heavy hacky hack ..!!
@@ -36,7 +35,6 @@ basis.
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
 
 %build
 %make CFLAGS="$RPM_OPT_FLAGS"
@@ -59,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
-%doc [A-Z][A-Z]* TESTTTF2PSM.short Readme doc examples *.conf
+%doc TESTTTF2PSM.short Readme doc examples
 %{_bindir}/*
 %config(noreplace) %{_sysconfdir}/chinese/*
 
