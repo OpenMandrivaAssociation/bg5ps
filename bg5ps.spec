@@ -5,7 +5,7 @@
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-Summary:	A program for converting PostScript files to Chinese PostScript files.
+Summary:	A program for converting PostScript files to Chinese PostScript files
 Source0:	ftp://ftp.debian.org/debian/dists/unstable/main/source/text/%{name}_%{version}.orig.tar.bz2
 Patch0:		bg5ps-geoff.patch
 Source1:	gb2312-bg5ps.conf
