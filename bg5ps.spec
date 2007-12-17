@@ -15,7 +15,6 @@ Group:		System/Internationalization
 Requires:	fonts-ttf-big5 fonts-ttf-gb2312 locales-zh
 BuildRequires:	freetype-devel
 License:	GPL
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 
