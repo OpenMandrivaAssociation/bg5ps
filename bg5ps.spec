@@ -18,7 +18,6 @@ License:	GPL
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
-
 bg5ps is a program for converting normally unreadable PostScript files 
 which are encoded in Big5 or GB to be readable using TrueType fonts.
 
