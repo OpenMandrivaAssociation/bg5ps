@@ -1,6 +1,6 @@
 %define	name	bg5ps
 %define	version	1.3.0
-%define	release	%mkrel 14
+%define	release	%mkrel 15
 
 Name:		%{name}
 Version:	%{version}
