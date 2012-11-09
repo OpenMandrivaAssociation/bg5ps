@@ -1,0 +1,34 @@
+diff -urN bg5ps-1.3.0/big5-bg5ps.conf bg5ps-1.3.0.geoff/big5-bg5ps.conf
+--- bg5ps-1.3.0/big5-bg5ps.conf	Tue Feb 15 03:07:15 2000
++++ bg5ps-1.3.0.geoff/big5-bg5ps.conf	Tue Sep  5 18:45:12 2000
+@@ -1,11 +1,11 @@
+ #chineseFontPath: 指定中文字型的路徑(預設值: 與 bg5ps 同) 
+-chineseFontPath="/usr/share/fonts/ttf/"
++chineseFontPath="/usr/share/fonts/ttf/big5"
+ 
+ #modify the above line
+ 
+ #fontName: 指定中文字型的檔案名稱(預設值: ntu_kai) 
+ #fontName="ntu_kai.ttf"
+-fontName="bsmi00lp.ttf"
++fontName_big5="bsmi00lp.ttf"
+ 
+ #oddPages: 0 不輸出奇數頁，1 輸出奇數頁(預設值: 1) 
+ #true=1, false=0 
+diff -urN bg5ps-1.3.0/gb2312-bg5ps.conf bg5ps-1.3.0.geoff/gb2312-bg5ps.conf
+--- bg5ps-1.3.0/gb2312-bg5ps.conf	Tue Feb 15 03:59:23 2000
++++ bg5ps-1.3.0.geoff/gb2312-bg5ps.conf	Tue Sep  5 18:48:51 2000
+@@ -1,11 +1,11 @@
+ #chineseFontPath: 指定中文字型的路徑(預設值: 與 bg5ps 同) 
+-chineseFontPath="/usr/share/fonts/ttf/"
++chineseFontPath="/usr/share/fonts/ttf/gb2312"
+ 
+ #modify the above line
+ 
+ #fontName: 指定中文字型的檔案名稱(預設值: ntu_kai) 
+ #fontName="ntu_kai.ttf"
+-fontName="gbsn00lp.ttf"
++fontName_gb2312="gbsn00lp.ttf"
+ 
+ #oddPages: 0 不輸出奇數頁，1 輸出奇數頁(預設值: 1) 
+ #true=1, false=0 
