@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# This is a wrapper of bg5ps for converting GB2312 file.
+#
+/usr/bin/bg5ps -en gb2312 -cf /etc/chinese/gb2312-bg5ps.conf $*

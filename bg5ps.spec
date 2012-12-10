@@ -60,3 +60,44 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/*
 %config(noreplace) %{_sysconfdir}/chinese/*
 
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 1.3.0-15mdv2011.0
++ Revision: 616748
+- the mass rebuild of 2010.0 packages
+
+* Wed Sep 02 2009 Thierry Vignaud <tv@mandriva.org> 1.3.0-14mdv2010.0
++ Revision: 424610
+- rebuild
+
+* Tue Jul 22 2008 Thierry Vignaud <tv@mandriva.org> 1.3.0-13mdv2009.0
++ Revision: 240443
+- rebuild
+- fix spacing at top of description
+- kill re-definition of %%buildroot on Pixel's request
+- fix summary-ended-with-dot
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Tue Sep 18 2007 Guillaume Rousse <guillomovitch@mandriva.org> 1.3.0-11mdv2008.0
++ Revision: 89580
+- rebuild
+
+* Wed Apr 25 2007 Adam Williamson <awilliamson@mandriva.org> 1.3.0-10mdv2008.0
++ Revision: 18125
+- rebuild for new era, fix spec
+
+
+* Fri May 12 2006 Stefan van der Eijk <stefan@eijk.nu> 1.3.0-9mdk
+- rebuild for sparc
+
+* Sat Dec 31 2005 Mandriva Linux Team <http://www.mandrivaexpert.com/> 1.3.0-8mdk
+- Rebuild
+
+* Tue Jul 22 2003 Per Øyvind Karlsen <peroyvind@sintrax.net> 1.3.0-7mdk
+- rebuild
+- rm -rf $RPM_BUILD_ROOT in %%install, not %%prep
+- use %%make macro
+
