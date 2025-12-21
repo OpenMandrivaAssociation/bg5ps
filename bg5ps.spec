@@ -13,6 +13,7 @@ Source2:	gbps
 # note: should we apply debian's patch? heavy hacky hack ..!!
 Group:		System/Internationalization
 Requires:	fonts-ttf-big5 fonts-ttf-gb2312 locales-zh
+BuildRequires:	make
 BuildRequires:	freetype-devel
 License:	GPL
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
